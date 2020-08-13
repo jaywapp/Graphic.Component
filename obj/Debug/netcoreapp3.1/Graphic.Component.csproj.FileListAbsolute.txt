@@ -1,0 +1,8 @@
+C:\Repositories\Graphic\Modules\Graphic.Component\bin\Debug\netcoreapp3.1\Graphic.Component.deps.json
+C:\Repositories\Graphic\Modules\Graphic.Component\bin\Debug\netcoreapp3.1\Graphic.Component.dll
+C:\Repositories\Graphic\Modules\Graphic.Component\obj\Debug\netcoreapp3.1\Graphic.Component.AssemblyInfoInputs.cache
+C:\Repositories\Graphic\Modules\Graphic.Component\obj\Debug\netcoreapp3.1\Graphic.Component.AssemblyInfo.cs
+C:\Repositories\Graphic\Modules\Graphic.Component\obj\Debug\netcoreapp3.1\Graphic.Component.csproj.CoreCompileInputs.cache
+C:\Repositories\Graphic\Modules\Graphic.Component\bin\Debug\netcoreapp3.1\Graphic.Component.pdb
+C:\Repositories\Graphic\Modules\Graphic.Component\obj\Debug\netcoreapp3.1\Graphic.Component.dll
+C:\Repositories\Graphic\Modules\Graphic.Component\obj\Debug\netcoreapp3.1\Graphic.Component.pdb

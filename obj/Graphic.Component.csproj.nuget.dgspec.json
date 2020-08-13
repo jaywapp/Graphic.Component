@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Repository\\Graphic\\Modules\\Graphic.Component\\Graphic.Component.csproj": {}
+    "C:\\Repositories\\Graphic\\Modules\\Graphic.Component\\Graphic.Component.csproj": {}
   },
   "projects": {
-    "D:\\Repository\\Graphic\\Modules\\Graphic.Component\\Graphic.Component.csproj": {
+    "C:\\Repositories\\Graphic\\Modules\\Graphic.Component\\Graphic.Component.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Repository\\Graphic\\Modules\\Graphic.Component\\Graphic.Component.csproj",
+        "projectUniqueName": "C:\\Repositories\\Graphic\\Modules\\Graphic.Component\\Graphic.Component.csproj",
         "projectName": "Graphic.Component",
-        "projectPath": "D:\\Repository\\Graphic\\Modules\\Graphic.Component\\Graphic.Component.csproj",
-        "packagesPath": "C:\\Users\\Junyoung\\.nuget\\packages\\",
-        "outputPath": "D:\\Repository\\Graphic\\Modules\\Graphic.Component\\obj\\",
+        "projectPath": "C:\\Repositories\\Graphic\\Modules\\Graphic.Component\\Graphic.Component.csproj",
+        "packagesPath": "C:\\Users\\Jaywapp\\.nuget\\packages\\",
+        "outputPath": "C:\\Repositories\\Graphic\\Modules\\Graphic.Component\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Junyoung\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Jaywapp\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,7 +52,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

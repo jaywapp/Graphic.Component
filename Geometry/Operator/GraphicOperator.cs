@@ -1,5 +1,6 @@
 ﻿using Graphic.Component.Geometry.Model;
 using System;
+using System.Numerics;
 
 namespace Graphic.Component.Geometry.Operator
 {
@@ -38,10 +39,14 @@ namespace Graphic.Component.Geometry.Operator
         public static double GetAngle(
             double x1, double y1, double x2, double y2, double x3, double y3)
         {
-            var d1 = GetDistance(x1, y1, x2, y2);
-            var d2 = GetDistance(x3, y3, x2, y2);
-            
-            return Math.Acos(d2 / d1);
+            var a = GetDistance(x1, y1, x3, y3);
+            var b = GetDistance(x1, y1, x2, y2);
+            var c = GetDistance(x2, y2, x3, y3);
+
+            var angle = Math.Acos(
+                (Math.Pow(b, 2) + Math.Pow(c, 2) - Math.Pow(a, 2)) / (2 * b * c));
+
+            return Math.Round(angle * 180 / Math.PI, 4);
         }
     }
 }
