@@ -1,6 +1,6 @@
 ﻿namespace Graphic.Component.Geometry.Interface
 {
-    public interface IGraphic
+    public interface IGraphicComponent
     {
     }
 }

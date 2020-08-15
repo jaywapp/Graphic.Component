@@ -1,6 +1,6 @@
 ﻿namespace Graphic.Component.Geometry.Interface
 {
-    public interface IGraphicTrace : ILengthMeasurable
+    public interface IGraphicTrace : IGraphicComponent, ILengthMeasurable
     {
         /// <summary>
         /// Point1

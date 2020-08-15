@@ -2,7 +2,7 @@
 
 namespace Graphic.Component.Geometry
 {
-    public class Point : IGraphic
+    public class Point : IGraphicComponent
     {
         #region Properties
         /// <summary>

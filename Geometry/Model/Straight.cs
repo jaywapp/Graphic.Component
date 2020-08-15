@@ -2,7 +2,7 @@
 
 namespace Graphic.Component.Geometry.Model
 {
-    public class Straight : IGraphic
+    public class Straight : IGraphicComponent
     {
         #region Properties
         /// <summary>

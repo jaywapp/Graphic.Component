@@ -27,16 +27,18 @@ namespace Graphic.Component.Geometry.Model
         /// Radius
         /// </summary>
         public double Radius { get; }
+
+        public bool IsClockWise { get; }
         #endregion
 
         #region Constructor
         public Curve(
             double x1, double y1, 
             double oriX, double oriY, 
-            double x2, double y2, double width = 0)
+            double x2, double y2, bool isClockWise, double width = 0)
         {
-            var radius1 = GraphicOperator.GetDistance(x1, y1, oriX, oriY);
-            var radius2 = GraphicOperator.GetDistance(x2, y2, oriX, oriY);
+            var radius1 = Calculator.MeasureDistance(x1, y1, oriX, oriY);
+            var radius2 = Calculator.MeasureDistance(x2, y2, oriX, oriY);
 
             if (radius1 != radius2)
                 throw new ArgumentException("잘못된 좌표점");
@@ -46,10 +48,11 @@ namespace Graphic.Component.Geometry.Model
             Origin = new Point(oriX, oriY);
             Width = width;
             Radius = radius1;
+            IsClockWise = isClockWise;
         }
 
-        public Curve(Point pt1, Point origin, Point pt2, double width = 0)
-            : this(pt1.X, pt1.Y, origin.X, origin.Y, pt2.X, pt2.Y, width)
+        public Curve(Point pt1, Point origin, Point pt2, bool isClockWise, double width = 0)
+            : this(pt1.X, pt1.Y, origin.X, origin.Y, pt2.X, pt2.Y, isClockWise, width)
         {
         }
         #endregion
@@ -61,8 +64,11 @@ namespace Graphic.Component.Geometry.Model
         /// <returns></returns>
         public double GetLength()
         {
-            var angle = GraphicOperator.GetAngle(
-                Pt1.X, Pt1.Y, Origin.X, Origin.Y, Pt2.X, Pt2.Y);
+
+            var angle = IsClockWise
+                ? Calculator.GetAngle(Pt1, Origin, Pt2)
+                : Calculator.GetAngle(Pt2, Origin, Pt1);
+
 
             return (2 * Math.PI * Radius) * (angle / 360);
         }
