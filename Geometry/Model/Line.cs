@@ -39,7 +39,7 @@ namespace Graphic.Component.Geometry.Model
         /// Length 측정
         /// </summary>
         /// <returns></returns>
-        public double GetLength() => Calculator.GetDistance(Pt1, Pt2);
+        public double GetLength() => Calculator.MeasureDistance(Pt1, Pt2);
         #endregion
     }
 }
