@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "cqqs9LxcHIYDs+dK8DQtbBJZ2q4ja2HVK02VYcHqyNP3OdWREAhF/AOZddgcyYX8dkA5lG/xl7ZXS20JWBabrA==",
+  "dgSpecHash": "pszphOxdq9MRwR11GkPNrgJ6ecqQMDuqqLsN4VRbcX0saYL10oca9Xh86SVLX462E9vGfiv3oecUghK6cml5Hw==",
   "success": true,
   "projectFilePath": "C:\\Repositories\\Graphic\\Modules\\Graphic.Component\\Graphic.Component.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Jaywapp\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512"
+  ],
   "logs": []
 }

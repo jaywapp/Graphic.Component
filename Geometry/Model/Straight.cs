@@ -6,7 +6,7 @@ namespace Graphic.Component.Geometry.Model
     {
         #region Properties
         /// <summary>
-        /// Point
+        /// 직선이 지나는 좌표
         /// </summary>
         public Point Point { get; }
         /// <summary>
@@ -20,6 +20,12 @@ namespace Graphic.Component.Geometry.Model
         #endregion
         
         #region Constructor
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="pt"></param>
+        /// <param name="inclination"></param>
+        /// <param name="width"></param>
         public Straight(Point pt, double inclination, double width = 0)
         {
             Point = pt;
@@ -27,6 +33,13 @@ namespace Graphic.Component.Geometry.Model
             Width = width;
         }
 
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
+        /// <param name="inclination"></param>
+        /// <param name="width"></param>
         public Straight(double x, double y, double inclination, double width = 0) 
             : this(new Point(x, y), inclination, width)
         {

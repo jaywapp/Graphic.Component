@@ -4,13 +4,24 @@ using Microsoft.VisualBasic;
 
 namespace Graphic.Component.Geometry
 {
+    /// <summary>
+    /// Polygon의 직선 Element
+    /// </summary>
     public class PolygonElement : Point
     {
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
         public PolygonElement(double x, double y) : base(x, y)
         {
         }
     }
 
+    /// <summary>
+    /// PolygonElement관련 Extension
+    /// </summary>
     public static class PolygonElementExt
     {
         public static IGraphicTrace CreateTrace(

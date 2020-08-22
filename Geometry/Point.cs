@@ -16,6 +16,11 @@ namespace Graphic.Component.Geometry
         #endregion
 
         #region Constructor
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
         public Point(double x, double y)
         {
             X = x;

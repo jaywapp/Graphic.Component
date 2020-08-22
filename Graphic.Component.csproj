@@ -10,4 +10,8 @@
     <None Remove="Test\**" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Infra\Infra.csproj" />
+  </ItemGroup>
+
 </Project>

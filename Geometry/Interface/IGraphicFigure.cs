@@ -1,6 +1,6 @@
 ﻿namespace Graphic.Component.Geometry.Interface
 {
-    interface IGraphicFigure : IGraphicComponent, ISizeMeasurable
+    public interface IGraphicFigure : IGraphicComponent
     {
         bool IsFilled { get; }
     }

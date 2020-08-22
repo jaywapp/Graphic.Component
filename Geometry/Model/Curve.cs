@@ -4,6 +4,9 @@ using System;
 
 namespace Graphic.Component.Geometry.Model
 {
+    /// <summary>
+    /// 곡선
+    /// </summary>
     public class Curve : IGraphicTrace
     {
         #region Properties
@@ -28,17 +31,30 @@ namespace Graphic.Component.Geometry.Model
         /// </summary>
         public double Radius { get; }
 
+        /// <summary>
+        /// 방향의 시계 방향 여부
+        /// </summary>
         public bool IsClockWise { get; }
         #endregion
 
         #region Constructor
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="x1"></param>
+        /// <param name="y1"></param>
+        /// <param name="oriX"></param>
+        /// <param name="oriY"></param>
+        /// <param name="x2"></param>
+        /// <param name="y2"></param>
+        /// <param name="isClockWise"></param>
+        /// <param name="width"></param>
         public Curve(
-            double x1, double y1, 
-            double oriX, double oriY, 
-            double x2, double y2, bool isClockWise, double width = 0)
+            double x1, double y1, double oriX, double oriY, double x2, double y2, 
+            bool isClockWise, double width = 0)
         {
-            var radius1 = Calculator.MeasureDistance(x1, y1, oriX, oriY);
-            var radius2 = Calculator.MeasureDistance(x2, y2, oriX, oriY);
+            var radius1 = Calculater.CalculateDistance(x1, y1, oriX, oriY);
+            var radius2 = Calculater.CalculateDistance(x2, y2, oriX, oriY);
 
             if (radius1 != radius2)
                 throw new ArgumentException("잘못된 좌표점");
@@ -50,27 +66,17 @@ namespace Graphic.Component.Geometry.Model
             Radius = radius1;
             IsClockWise = isClockWise;
         }
-
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="pt1"></param>
+        /// <param name="origin"></param>
+        /// <param name="pt2"></param>
+        /// <param name="isClockWise"></param>
+        /// <param name="width"></param>
         public Curve(Point pt1, Point origin, Point pt2, bool isClockWise, double width = 0)
             : this(pt1.X, pt1.Y, origin.X, origin.Y, pt2.X, pt2.Y, isClockWise, width)
         {
-        }
-        #endregion
-
-        #region Functions
-        /// <summary>
-        /// Length 측정
-        /// </summary>
-        /// <returns></returns>
-        public double GetLength()
-        {
-
-            var angle = IsClockWise
-                ? Calculator.GetAngle(Pt1, Origin, Pt2)
-                : Calculator.GetAngle(Pt2, Origin, Pt1);
-
-
-            return (2 * Math.PI * Radius) * (angle / 360);
         }
         #endregion
     }

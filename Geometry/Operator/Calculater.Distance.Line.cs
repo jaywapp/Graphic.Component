@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Graphic.Component.Geometry.Operator
 {
-    public static partial class Calculator
+    public static partial class Calculater
     {
     }
 }
